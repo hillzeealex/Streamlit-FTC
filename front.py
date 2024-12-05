@@ -44,14 +44,13 @@ def home_page():
         div.stButton > button {
             display: block;
             margin: 0 auto;
-            width: 30%; /* Réduit la largeur à 40% */
+            width: 40%; /* Réduit la largeur à 40% */
             height: 60px;
             font-size: 20px;
             font-weight: bold;
             background-color: #FF4B4B; /* Vert pour attirer l'attention */
             color: white;
             border-radius: 10px;
-            border: none;
         }
         div.stButton > button:hover {
             background-color: #FF4B4B; /* Couleur légèrement différente au survol */
