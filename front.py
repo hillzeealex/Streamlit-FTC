@@ -341,7 +341,7 @@ def results_page():
         else:
             st.warning("Aucun résultat pour les modèles sélectionnés.")
     except requests.exceptions.RequestException as e:
-        st.error(f"Erreur lors de l'appel à l'API : {e}")
+        st.error(f"Aucune recette trouvée")
 
 # Naviguer entre les pages
 pages = [home_page, ingredients_page, manual_mood_page, other_criteria_page, results_page]
