@@ -37,7 +37,29 @@ def home_page():
     # Espacement vertical pour séparer le bouton
     st.markdown("<br><br>", unsafe_allow_html=True)
 
-    
+    # Style CSS pour le bouton "J'ai faim !"
+    st.markdown(
+        """
+        <style>
+        div.stButton > button {
+            display: block;
+            margin: 0 auto;
+            width: 40%; /* Réduit la largeur à 40% */
+            height: 60px;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: #FF4B4B; /* Vert pour attirer l'attention */
+            color: white;
+            border-radius: 10px;
+            border: none;
+        }
+        div.stButton > button:hover {
+            background-color: #FF4B4B; /* Couleur légèrement différente au survol */
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
 
     # Bouton pour passer à la page suivante
     if st.button("J'ai faim !"):
@@ -235,10 +257,13 @@ def other_criteria_page():
             height: 60px;
             font-size: 20px;
             font-weight: bold;
+            background-color: #FF4B4B; /* Vert pour attirer l'attention */
+            color: white;
             border-radius: 10px;
             border: none;
         }
         div.stButton > button:hover {
+            background-color: #FF4B4B; /* Couleur légèrement différente au survol */
         }
         </style>
         """,
@@ -322,4 +347,3 @@ def results_page():
 # Naviguer entre les pages
 pages = [home_page, ingredients_page, manual_mood_page, other_criteria_page, results_page]
 pages[st.session_state.page]()
-
