@@ -37,26 +37,7 @@ def home_page():
     # Espacement vertical pour séparer le bouton
     st.markdown("<br><br>", unsafe_allow_html=True)
 
-    # Style CSS pour le bouton "J'ai faim !"
-    st.markdown(
-        """
-        <style>
-        div.stButton > button {
-            display: block;
-            margin: 0 auto;
-            width: 40%; /* Réduit la largeur à 40% */
-            height: 60px;
-            font-size: 20px;
-            font-weight: bold;
-            border-radius: 10px;
-            border: none;
-        }
-        div.stButton > button:hover {
-        }
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
+    
 
     # Bouton pour passer à la page suivante
     if st.button("J'ai faim !"):
