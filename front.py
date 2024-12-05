@@ -48,13 +48,10 @@ def home_page():
             height: 60px;
             font-size: 20px;
             font-weight: bold;
-            background-color: #4CAF50; /* Vert pour attirer l'attention */
-            color: white;
             border-radius: 10px;
             border: none;
         }
         div.stButton > button:hover {
-            background-color: #45a049; /* Couleur légèrement différente au survol */
         }
         </style>
         """,
@@ -257,13 +254,10 @@ def other_criteria_page():
             height: 60px;
             font-size: 20px;
             font-weight: bold;
-            background-color: #4CAF50; /* Vert pour attirer l'attention */
-            color: white;
             border-radius: 10px;
             border: none;
         }
         div.stButton > button:hover {
-            background-color: #45a049; /* Couleur légèrement différente au survol */
         }
         </style>
         """,
