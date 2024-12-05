@@ -4,7 +4,7 @@ import pandas as pd
 
 pd.set_option('display.max_colwidth', None)
 
-API_URL = "https://jeanmichmich-126218864119.europe-west1.run.app/docs#/default/predict_predict_get"
+API_URL = "https://jeanmichmich-126218864119.europe-west1.run.app/"
 
 st.set_page_config(
     page_title="FIT tes courses !",
